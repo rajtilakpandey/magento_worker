@@ -1,21 +1,25 @@
 <?php
-
-declare(strict_types= 1);
+declare(strict_types=1);
 
 namespace Training\Example\Controller\Index;
 
 use Magento\Framework\App\ActionInterface;
-use \Magento\Framework\Controller\Result\RawFactory;
-class Index implements ActionInterface {
+use Magento\Framework\Controller\Result\RawFactory;
 
-    protected $resultFactory;
+class Index implements ActionInterface
+{
+    protected $resultRawFactory;
 
-    public function __construct(RawFactory $resultFactory) {
-        $this->resultFactory = $resultFactory;
-
+    public function __construct(RawFactory $resultRawFactory)
+    {
+        $this->resultRawFactory = $resultRawFactory;
     }
-    public function execute() { 
-        return $this->resultFactory->create()->setContents('Example');
+
+    public function execute()
+    {
+        $resultRaw = $this->resultRawFactory->create();
+        $resultRaw->setContents('Example');
+        return $resultRaw;
     }
 }
 
