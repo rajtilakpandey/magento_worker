@@ -15,7 +15,6 @@ class Index implements ActionInterface{
     }
     public function execute()  {
         $result = $this->resultFactory->create();
-        $result->getConfig()->getTitle()->set("Rajtilak");
         return $result;
     }   
 }

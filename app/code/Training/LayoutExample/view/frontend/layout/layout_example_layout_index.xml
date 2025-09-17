@@ -6,11 +6,6 @@
     </head>
 
     <body>
-        <referenceBlock name="page.main.title">
-            <action method="setPageTitle">
-                <argument name="page_title" xsi:type="string">Nextjs Developer</argument>
-            </action>
-        </referenceBlock>
         <referenceContainer name="content">
             <block name="layout_example"
                    class="Training\LayoutExample\Block\Layout\Index"
