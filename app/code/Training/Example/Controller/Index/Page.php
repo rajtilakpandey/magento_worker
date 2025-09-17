@@ -16,6 +16,8 @@ class Page implements ActionInterface {
     }
 
     public function execute() {
-        return $this->pageFactory->create();
+        $page =  $this->pageFactory->create();
+        $page->getConfig()->getTitle()->set("Rajtilak Devops");
+        return $page;
     }
 }
