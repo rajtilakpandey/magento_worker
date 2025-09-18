@@ -22,4 +22,8 @@ class Index extends Template {
     public function getSubTitle(): string {
         return "Learn from best";
     }
+
+    public function getNodeHTML(): string {
+        return $this->getLayout()->createBlock(Note::class)->toHtml();
+    }
 }
