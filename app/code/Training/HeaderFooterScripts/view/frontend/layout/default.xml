@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additonal">
+            <block name="header_footer_script_default" template="Training_HeaderFooterScripts::head_additonal/default.phtml"
+                    class="Magento\Framework\View\Element\Template"/>
+        </referenceBlock>
+        <!-- <referenceContainer name="content">
+            <block class="Training\HeaderFooterScripts\Block\Name" name="Training_HeaderFooterScripts_Name" template="Training_HeaderFooterScripts::index.phtml" />
+        </referenceContainer> -->
+    </body>
+</page>
