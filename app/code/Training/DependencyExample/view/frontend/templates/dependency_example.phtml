@@ -1,0 +1,27 @@
+<?php
+/** @var \Training\DependencyExample\Block\Template $block */
+?>
+
+<div>
+    <h1>Dependency Example</h1>
+</div>
+
+<p>
+    Class Main id is <?= $block->getMain()->getId() ?>
+</p>
+
+<p>
+    Class Injectable id is <?= $block->getMain()->getInjectable()->getId() ?>
+</p>
+
+<p>
+    Class Non Injectable id is <?= $block->getMain()->getNonInjectable()->getId() ?>
+</p>
+
+<p>
+    Class Abstract Util id is <?= $block->getMain()->getUtil()->getName()?>
+</p>
+
+<p>
+    Class Heavy HeavyOperation is<?= $block->getMain()->getHeavyOperation()->getName() ?>
+</p>
