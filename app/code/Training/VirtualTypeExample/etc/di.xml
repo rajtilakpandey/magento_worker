@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Training\VirtualTypeExample\Api\WarehouseManagementInterface"
-                type="Training\VirtualTypeExample\Model\WarehouseManagement"/>
+                type="Training\VirtualTypeExample\Model\WarehouseManagement" />
     <preference for="Training\VirtualTypeExample\Api\WarehouseRepositoryInterface"
-                type="Training\VirtualTypeExample\Model\WarehouseRepository"/>
+                type="Training\VirtualTypeExample\Model\WarehouseRepository" />
 
     <type name="Training\VirtualTypeExample\ViewModel\Example">
         <arguments>
@@ -11,7 +12,8 @@
         </arguments>
     </type>
 
-    <virtualType name="WarehouseRepositoryExtended" type="Training\VirtualTypeExample\Model\WarehouseRepository">
+    <virtualType name="WarehouseRepositoryExtended"
+                 type="Training\VirtualTypeExample\Model\WarehouseRepository">
         <arguments>
             <argument name="warehouseManagement" xsi:type="object">Training\VirtualTypeExample\Model\WarehouseManagementExtended</argument>
         </arguments>
