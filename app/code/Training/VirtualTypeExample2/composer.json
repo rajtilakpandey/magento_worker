@@ -1,0 +1,17 @@
+{
+    "name": "training/virtualtypeexample2",
+    "description": "",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+      "MIT"
+    ],
+    "autoload": {
+      "psr-4": {
+        "Training\\VirtualTypeExample2\\": ""
+      },
+      "files": [
+        "registration.php"
+      ]
+    }
+  }
