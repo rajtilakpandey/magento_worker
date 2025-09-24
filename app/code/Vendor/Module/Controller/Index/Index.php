@@ -1,18 +1,23 @@
 <?php
 namespace Mageplaza\Customize\Controller\Index;
 
-class Index extends \Magento\Framework\App\Action\Action
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\Controller\Result\Raw;
+use Magento\Framework\Controller\ResultFactory; // add this
+
+class Index extends Action
 {
     /**
      * Index action
      *
-     * @return $this
+     * @return Raw
      */
-    public function execute()
+    public function execute(): Raw
     {
-        // intentionally left empty
-        // $this->_view->loadLayout();
-        // $this->_view->getLayout()->getBlock('page.main.title')->setPageTitle('DemoWidget');
-        // $this->_view->renderLayout();
+        /** @var Raw $result */
+        $result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
+        $result->setContents('Hello World');
+
+        return $result;
     }
 }

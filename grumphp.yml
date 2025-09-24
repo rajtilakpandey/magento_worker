@@ -3,11 +3,9 @@ grumphp:
   hide_circumvention_tip: true
   process_timeout: 120
   tasks:
-    phplint:
-      triggered_by: ['php','phtml']
     composer:
       file: composer.json
-    phpcsfixer:         # <--- Correct task name
+    phpcsfixer:
       config: .php-cs-fixer.dist.php
       allow_risky: false
       verbose: true
@@ -15,4 +13,5 @@ grumphp:
       standard: Magento2
     phpstan:
       level: 5
-      
+      ignore_patterns:
+        - 'app/code/Vendor/*'

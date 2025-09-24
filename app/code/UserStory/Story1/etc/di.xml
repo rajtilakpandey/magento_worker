@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <preference for="Magento\Catalog\Api\Data\CategoryInterface" type="UserStory\Story1\Model\CustomCategory"/>
+
+    <type name="UserStory\Story1\Test">
+        <arguments>
+            <argument name="string_random" xsi:type="string">Hello from di.xml!</argument>
+            <argument name="array_random" xsi:type="array">
+                <item name="framework" xsi:type="string">Magento 2</item>
+                <item name="feature" xsi:type="string">Dependency Injection</item>
+                <item name="module_author" xsi:type="string">Rajtilak Pandey</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>
