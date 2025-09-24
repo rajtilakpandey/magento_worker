@@ -1,0 +1,18 @@
+grumphp:
+  stop_on_failure: true
+  hide_circumvention_tip: true
+  process_timeout: 120
+  tasks:
+    phplint:
+      triggered_by: ['php','phtml']
+    composer:
+      file: composer.json
+    phpcsfixer:         # <--- Correct task name
+      config: .php-cs-fixer.dist.php
+      allow_risky: false
+      verbose: true
+    phpcs:
+      standard: Magento2
+    phpstan:
+      level: 5
+      

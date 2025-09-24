@@ -1,4 +1,3 @@
-
 <?php
 namespace Mageplaza\Customize\Controller\Index;
 
@@ -11,8 +10,9 @@ class Index extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
-        $this->_view->loadLayout();
-        $this->_view->getLayout()->getBlock('page.main.title')->setPageTitle('DemoWidget');
-        $this->_view->renderLayout();
+        // intentionally left empty
+        // $this->_view->loadLayout();
+        // $this->_view->getLayout()->getBlock('page.main.title')->setPageTitle('DemoWidget');
+        // $this->_view->renderLayout();
     }
 }
