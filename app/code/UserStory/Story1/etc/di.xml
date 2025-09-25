@@ -14,4 +14,9 @@
         </arguments>
     </type>
 
+    <type name="UserStory\Story1\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">story1</argument>
+        </arguments>
+    </type>
 </config>

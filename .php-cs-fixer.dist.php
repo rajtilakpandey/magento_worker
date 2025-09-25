@@ -38,10 +38,14 @@ $config->setFinder($finder)
         'no_singleline_whitespace_before_semicolons' => true,
         'no_trailing_comma_in_singleline_array' => true,
         'no_unused_imports' => true,
-        'no_whitespace_in_blank_line' => true,
+        'no_whitespace_in_blank_line' => false,
         'object_operator_without_whitespace' => true,
         'ordered_imports' => true,
         'standardize_not_equals' => true,
         'ternary_operator_spaces' => true,
+        'single_blank_line_at_eof' => false,
+        'no_trailing_whitespace' => false,
+        'statement_indentation' => false,
+        'braces_position' => false,
     ]);
 return $config;
